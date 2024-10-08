@@ -481,15 +481,15 @@ def forgotpassword(request):
         if result is not None:
             # SMTP server configuration
             smtp_server = 'smtp.gmail.com'
-            smtp_port = 587
-            smtp_username = 'mohammadabdulbasith123@gmail.com'
+            smtp_port = 
+            smtp_username = ''
             # For App Password, enable 2-step verification, then create an app password
-            smtp_password = 'fkvheyrqbxahctoe'
+            smtp_password = ''
             # Email content
             subject = 'Password recovery'
             body = 'This is a Password recovery email sent from Surplus Food Management. ' \
                    'Your password as per registration is: ' + pwd
-            sender_email = 'mohammadabdulbasith123@gmail.com'
+            sender_email = ''
             receiver_email = email
             # Create a message
             message = MIMEMultipart()
@@ -560,20 +560,20 @@ def donations(request):
 def orphanrequest(request,donorid):
      # SMTP server configuration
     smtp_server = 'smtp.gmail.com'
-    smtp_port = 587
-    smtp_username = 'mohammadabdulbasith123@gmail.com'
+    smtp_port = 
+    smtp_username = ''
     # For App Password, enable 2-step verification, then create an app password
-    smtp_password = 'fkvheyrqbxahctoe'
+    smtp_password = ''
     # Email contentytf
     subject = 'Donation Request'
     body = 'Dear Sir, We request to deliver the donation of the donar id ' \
             'Donar Id  : ' + str(donorid)
-    sender_email = 'mohammadabdulbasith123@gmail.com'
-    receiver_email = "sumathikannri2003@gmail.com"
+    sender_email = ''
+    receiver_email = ""
     # Create a message
     message = MIMEMultipart()
     message['From'] = sender_email
-    message['To'] = "sumathikannuri2003@gmail.com"
+    message['To'] = ""
     message['Subject'] = subject
     message.attach(MIMEText(body, 'plain'))
     # Connect to SMTP server and send the email
